@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale="1.0">
+    <title>Aisha's Burgers</title>
+    <link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#order">ORDER</a></li>
+                    <li><a href="#loc">LOCATIONS</a></li>
+                    <li><a href="#reserve">RESERVE-CONTACT</a></li>
+                    
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="hideMenu()"></i>
+        </nav>
+
+<div class="text-box" id="home">
+    <h1>World's Tastiest Burger</h1>
+    <p>Worried about which place to have dinner after a long & hectic week? <br>You've come to the right place.</p>
+    <a href="" class="hero-btn">Visit us to know more</a>
+</div>
+    </section>
+
+<!--Order part-->
+<section class="order" id="order">
+    
+    
+    <section id="overlay">
+      
+        <hr>
+        <form action="submission.html" method="POST">
+                  <h1> Welcome to Burger Classic! Create a healthy burger with us.<br><br></h1>
+          <section class="allergy">
+            <label for="patty">Do you have any allergies? If yes, please mention them, if not, enter "N/A"</label><br>
+                  <input type="text" name="allergy" id="allergy">
+          </section>
+          <hr>
+          
+          <section class="patties">
+            <label for="amount">How many patties would you like?</label><br>
+            <input type="number" name="amount" id="amount">
+          </section>
+          <hr>
+          
+          <section class="cooked">
+            <label for="doneness">How do you want your patty cooked?</label><br>
+            <br>
+            <span>Rare</span>
+            <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+            <span>Well-Done</span>
+          </section>
+          <hr>
+  
+          
+          
+          <section class="toppings">
+            <span>What toppings would you like?</span><br>
+            <br>
+            <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+            <label for="lettuce">Lettuce</label>
+            <input type="checkbox" name="topping" id="tomato" value="tomato">
+            <label for="tomato">Tomato</label>
+            <input type="checkbox" name="topping" id="onion" value="onion">
+            <label for="onion">Onion</label>
+            <input type="checkbox" name="topping" id="baked beans" value="baked beans">
+            <label for="baked beans">Baked Beans</label>
+            <input type="checkbox" name="topping" id="cucumbers" value="cucumbers">
+            <label for="cucumbers">Cucumbers</label>
+            <input type="checkbox" name="topping" id="mushrooms" value="mushrooms">
+            <label for="mushrooms">Mushrooms</label>
+            <input type="checkbox" name="topping" id="egg" value="egg">
+            <label for="egg">Eggs</label>
+            
+          </section>
+          <hr>
+          
+          <section class="cheesy">
+            <span>Would you like to add cheese?</span><br>
+            <br>
+            <input type="radio" name="cheese" id="yes" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="cheese" id="no" value="yes">
+            <label for="no">No</label><br>
+          </section>
+          <hr>
+         
+          <section class="bun-type">
+            <label for="bun">What type of bun would you like?</label><br>
+            <select name="bun" id="bun">
+              <option value="sesame">Sesame</option>
+              <option value="potatoe">Potato</option>
+              <option value="pretzel">Pretzel</option>
+            </select>
+          </section>
+          <hr>
+          
+          <section class="sauce-selection">
+            <label for="sauce">What type of sauce would you like?</label><br>
+            <input list="sauces" id="sauce" name="sauce">
+            <datalist id="sauces">
+              <option value="ketchup"></option>
+              <option value="mayo"></option>
+              <option value="mustard"></option>
+              <option value="avocado"></option>
+              <option value="herb mayo"></option>
+              <option value="chipotle"></option>
+              <option value="seasame"></option>
+              <option value="tahini"></option>
+              <option value="hummus"></option>
+              <option value="kimchi"></option>
+              <option value="guacamole"></option>
+              <option value="salsa"></option>
+              <option value="pesto"></option>
+              <option value="ranch"></option>
+              <option value="peanut"></option>
+              <option value="cachew"></option>
+              <option value="cilantro"></option>
+              <option value="coconut"></option>
+              <option value="garlic"></option>
+              <option value="chilli"></option>
+              <option value="kashmiri"></option>
+              <option value="jalapeno"></option>
+  
+            </datalist>
+          </section>
+          <hr>
+          <section class="extra-info">
+            <label for="extra">Is there anything else you want to add?</label><br>
+            <br>
+            <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+          </section>
+          <hr>
+  
+          <section class="address">
+            <label for="address">Please enter your delivery address: </label><br>
+                  <input type="text" name="address" id="address">
+          </section>
+          <hr>
+  
+          <!--<section class="submission">
+            <input type="submit" value="Submit">-->
+  
+          <button type="button" onclick="window.location.href='thank.html'">Submit</button>
+          </section>
+        </form>
+      </section>
+
+
+
+<section class="locations" id="loc">
+    <h1>Our Locations</h1>
+    <h1>We are located in many countries and will continue to open in many more.</h1>
+
+    <div class="row">
+        <div class="locations-col">
+            <img src="/Users/aishakhan/Desktop/eduford_img/london.png">
+            <div class="layer">
+                <h3>--------------------------------LONDON-----------------------------------</h3>
+            </div>
+        </div>
+        <div class="locations-col">
+            <img src="/Users/aishakhan/Desktop/eduford_img/newyork.png">
+            <div class="layer">
+                <h3>---------------------------------------UAE-----------------------------------</h3>
+            </div>
+        </div>
+        <div class="locations-col">
+            <img src="/Users/aishakhan/Desktop/eduford_img/washington.png">
+            <div class="layer">
+                <h3>----------------------------WASHINGTON-------------------------------</h3>
+            </div>
+        </div>
+    </div>
+</section class="reserve" id="reserve">
+<div class="reserve" id="reserve">
+    <div class="reserve">
+      <h1>Reservations and Contact Information</h1>
+      <h3>Find us at some address at some place or call us at 05050515-122330<br><br></h3>
+      <h3><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. <br>We understand your needs and we will cater the food to satisfy the biggest criteria of them all, both look and taste.<br><br></h3>
+      <h3><strong>Reserve</strong> a table, ask for today's special or just send us a message:<br></h3><br>
+      <form action="/action_page.php" target="_blank">
+        <h3><input  type="text" placeholder="Name" required name="Name"></h3><br>
+        <h3><input  type="number" placeholder="How many people" required name="People"></h3><br>
+        <h3><input type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></h3><br>
+        <h3><input type="text" placeholder="Message \ Special requirements" required name="Message"></h3><br>
+        <h3><button type="submit">SEND MESSAGE</button></h3><br>
+      </form>
+    </div>
+  </div>
+
+</section>
+
+<!--JS code part for small screen menu-->
+
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right ="0";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    }
+</script>
+</body>
+</html>
